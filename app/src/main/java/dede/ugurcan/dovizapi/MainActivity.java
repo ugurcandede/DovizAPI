@@ -1,5 +1,13 @@
 package dede.ugurcan.dovizapi;
 
+/**
+ * @author: Ugurcan Dede
+ * @date: 13.12.2019
+ * @description: API implementation using fixer.io by Ugurcan Dede
+ * @project-url: https://github.com/ugurcandede/DovizAPI
+ */
+
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.AsyncTask;
@@ -95,20 +103,20 @@ public class MainActivity extends AppCompatActivity {
                 String rates = jsonObject.getString("rates");
                 JSONObject jsonObject1 = new JSONObject(rates);
 
-                String turkLirası = jsonObject1.getString("TRY");
-                tryText.setText(turkLirası);
+                String turkLirasi = jsonObject1.getString("TRY");
+                tryText.setText(turkLirasi);
 
-                String abdDoları = jsonObject1.getString("USD");
-                usdText.setText(abdDoları);
+                String abdDolari = jsonObject1.getString("USD");
+                usdText.setText(abdDolari);
 
-                String audDoları = jsonObject1.getString("AUD");
-                audText.setText(audDoları);
+                String audDolari = jsonObject1.getString("AUD");
+                audText.setText(audDolari);
 
-                String cadDoları = jsonObject1.getString("CAD");
-                cadText.setText(cadDoları);
+                String cadDolari = jsonObject1.getString("CAD");
+                cadText.setText(cadDolari);
 
-                String jpyDoları = jsonObject1.getString("JPY");
-                jpyText.setText(jpyDoları);
+                String jpyDolari = jsonObject1.getString("JPY");
+                jpyText.setText(jpyDolari);
 
 
             } catch (Exception e) {
